@@ -33,6 +33,29 @@ const data = {
       href: '/search?tag=help',
     },
   ],
+  carousels: [
+    {
+      title: 'Most popular shoes for sale',
+      buttonCaption: 'Shop Now',
+      image: '/images/banner3.jpg',
+      url: '/search?category=shoes',
+      isPublished: true,
+    },
+    {
+      title: 'Best Sellers in T-shirts',
+      buttonCaption: 'Shop Now',
+      image: '/images/banner1.jpg',
+      url: '/search?category=t-shirts',
+      isPublished: true,
+    },
+    {
+      title: 'Best Deals on Wrist Watches',
+      buttonCaption: 'Shop Now',
+      image: '/images/banner2.jpg',
+      url: '/search?category=Wrist watches',
+      isPublished: true,
+    },
+  ],
 }
 
 export default data
