@@ -18,7 +18,7 @@ const productSchema = new Schema<IProduct>(
     price: { type: Number, required: true },
     listPrice: { type: Number, required: true },
     countInStock: { type: Number, required: true },
-    tags: { type: [String], default: ['New Arrivals'] },
+    tags: { type: [String], default: ['New Arrival'] },
     sizes: { type: [String], default: ['S', 'M', 'L', 'XL', 'XXL'] },
     colors: {
       type: [String],
