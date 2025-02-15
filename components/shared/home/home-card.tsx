@@ -17,7 +17,6 @@ type CardItem = {
 }
 
 export function HomeCard({ cards }: { cards: CardItem[] }) {
-  console.log(cards)
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-4'>
       {cards.map((card) => (
@@ -26,7 +25,6 @@ export function HomeCard({ cards }: { cards: CardItem[] }) {
             <h3 className='text-xl font-bold mb-4'>{card.title}</h3>
             <div className='grid grid-cols-2 gap-4'>
               {card.items.map((item) => {
-                console.log(item.image)
                 return (
                   <Link
                     key={item.name}
