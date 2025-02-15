@@ -11,6 +11,7 @@ export default function Rating({
   const partialStar = rating % 1
   const emptyStar = 5 - Math.ceil(rating)
 
+  console.log(partialStar, fullStar, emptyStar)
   return (
     <div
       className='flex items-center'
@@ -27,7 +28,7 @@ export default function Rating({
         }),
       ]}
       {partialStar > 0 && (
-        <div>
+        <div className='relative'>
           <Star className={`w-${size} h-${size} text-primary`} />
           <div
             className='absolute top-0 left-0 overflow-hidden'

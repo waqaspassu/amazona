@@ -55,7 +55,7 @@ export const ProductCard = ({
       </Link>
       <div className='flex gap-2 justify-center'>
         <Rating rating={product.avgRating} />
-        <span>({formatNumber(product.avgRating)})</span>
+        <span>({formatNumber(product.numReviews)})</span>
       </div>
 
       <ProductPrice
