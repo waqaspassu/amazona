@@ -11,7 +11,6 @@ export default function Rating({
   const partialStar = rating % 1
   const emptyStar = 5 - Math.ceil(rating)
 
-  console.log(partialStar, fullStar, emptyStar)
   return (
     <div
       className='flex items-center'
